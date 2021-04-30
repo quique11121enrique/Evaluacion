@@ -9,23 +9,13 @@ namespace Evaluacion.Data.Entities
         public int Id { get; set; }
 
         public string Name { get; set; }
+        public string Address { get; set; }
+        public string Phone { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
-        public decimal Price { get; set; }
+        public string Nickname { get; set; }
 
-        [Display(Name = "Image")]
-        public string ImageUrl { get; set; }
+        public string Password { get; set; }
 
-        [Display(Name = "Last Purchase")]
-        public DateTime LastPurchase { get; set; }
-
-        [Display(Name = "Last Sale")]
-        public DateTime LastSale { get; set; }
-
-        [Display(Name = "Is Available")]
-        public bool IsAvailable { get; set; }
-
-        [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = false)]
-        public double Stock { get; set; }
+        public bool StatusLog { get; set; }
     }
 }
